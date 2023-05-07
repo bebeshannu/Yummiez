@@ -3,6 +3,7 @@ import React, { useLayoutEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { UserIcon, ChevronDownIcon, MagnifyingGlassCircleIcon, AdjustmentsVerticalIcon } from "react-native-heroicons/outline";
 import Categories from '../components/Categories';
+import FeaturedRow from '../components/FeaturedRow';
 
 
 const HomeScreen = () => {
@@ -59,6 +60,23 @@ const HomeScreen = () => {
           <Categories/>
 
           {/* Featured rows */}
+          <FeaturedRow
+          id="1"
+          title="Featured"
+          description="Paid placements from our partners"
+          />
+           {/* Tasty Discounts */}
+           <FeaturedRow
+           id="2"
+          title="Tasty Discounts"
+          description="Everyone's been enjoying this juicy discounts!"
+          />
+           {/* Offeres near you */}
+           <FeaturedRow
+           id="3"
+          title="Offeres near you"
+          description="Why not support your local restaurant today?"
+          />
         </ScrollView>
       
     </SafeAreaView>
