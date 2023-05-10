@@ -6,6 +6,7 @@ import { ArrowLeftIcon,StarIcon, } from 'react-native-heroicons/solid';
 import { MapPinIcon } from 'react-native-heroicons/solid';
 import { ChevronRightIcon, QuestionMarkCircleIcon } from 'react-native-heroicons/outline';
 import DishRow from '../components/DishRow';
+import BasketIcon from '../components/BasketIcon';
 
 const RestaurantScreen = () => {
 const navigation= useNavigation();
@@ -31,6 +32,8 @@ useLayoutEffect(() =>{
 }, []);
 
   return (
+    <>
+    <BasketIcon/>
     <ScrollView>
       <View className='relative'>
         <Image
@@ -78,7 +81,7 @@ useLayoutEffect(() =>{
             <ChevronRightIcon size={15} color="#00CCBB"/>
         </TouchableOpacity>
       </View>
-      <View>
+      <View className="pb-36">
         <Text className="px-4 pt-6 mb-3 font-bold text-xl">Menu</Text>
         {/* Dish rows */}
         {dishes.map((dish)=>(
@@ -93,6 +96,8 @@ useLayoutEffect(() =>{
         ))}
       </View>
     </ScrollView>
+
+    </>
   )
 }
 
