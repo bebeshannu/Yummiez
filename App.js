@@ -12,6 +12,7 @@ import { store } from './store';
 import BasketScreen from './screens/BasketScreen';
 import PreparingOrderScreen from './screens/PreparingOrderScreen';
 import DeliveryScreen from './screens/DeliveryScreen';
+import DevScreen from './screens/DevScreen';
 
 
 
@@ -25,6 +26,7 @@ export default function App() {
     <TailwindProvider>
     <Stack.Navigator>
     <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Screen name="Dev" component={DevScreen} />
     <Stack.Screen name="Restaurant" component={RestaurantScreen} />
     <Stack.Screen name="Basket" component={BasketScreen} 
     options={{ presentation: 'modal', headerShown: false }}

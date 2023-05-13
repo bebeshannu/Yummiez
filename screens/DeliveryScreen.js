@@ -19,7 +19,7 @@ const DeliveryScreen = () => {
             <TouchableOpacity onPress={()=> navigation.navigate ('Home')}>
                 <XMarkIcon color="white" size={30}/>
             </TouchableOpacity>
-            <Text className="font-light text-white text-lg">Oder Help</Text>
+            <Text className="font-light text-white text-lg">Order Help</Text>
         </View>
         <View className="bg-white mx-5 my-2 rounded-md p-6 z-50 shadow-md">
             <View className="flex-row justify-between">
@@ -74,7 +74,7 @@ coordinate={{
 }}
 title={restaurant.title}
 description={restaurant.short_description}
-//identifier='origin'
+identifier='origin'
 pinColor='#00CCBB'
 />
 
